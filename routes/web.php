@@ -13,6 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+/**
+ * Route Home
+ */
+
+Route::get('/', 'HomeController@home')->name('homepage');
+
+
+
+Route::get('/chi-siamo', 'HomeController@noi')->name('sezione-chi-siamo');
+
+Route::get('/contatti', 'HomeController@contatti' )->name('sezione-contatti');
+
+Route::get('/social' , 'HomeController@social' )->name('sezione-social');
+
+
+
+
+/**
+ * Route Pacchetti
+ */
+
+Route::get('/pacchetti', function () {
+    return view('pacchetti');
+})->name('sezione-pacchetti');
