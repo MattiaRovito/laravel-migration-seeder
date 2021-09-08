@@ -20,8 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@home')->name('homepage');
 
-
-
 Route::get('/chi-siamo', 'HomeController@noi')->name('sezione-chi-siamo');
 
 Route::get('/contatti', 'HomeController@contatti' )->name('sezione-contatti');
