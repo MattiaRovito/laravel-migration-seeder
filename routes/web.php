@@ -33,6 +33,7 @@ Route::get('/social' , 'HomeController@social' )->name('sezione-social');
  * Route Pacchetti
  */
 
-Route::get('/pacchetti', function () {
-    return view('pacchetti');
-})->name('sezione-pacchetti');
+Route::get('/pacchetti', 'PacchettiController@index')->name('sezione-pacchetti');
+
+
+// Route::get('/pacchetti', )->name('sezione-pacchetti');
