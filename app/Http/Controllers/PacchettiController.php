@@ -7,5 +7,5 @@ use App\Pacchetti;
 
 class PacchettiController extends Controller
 {
-    //
+ 
 }
