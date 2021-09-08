@@ -12,4 +12,11 @@ class PacchettiController extends Controller
         
         return view('pacchetti', compact('packages'));
     }
+
+
+    public function show($key) {
+        $package = Trip::where('id', $key)->first();
+        return view('dettaglio', compact('package'));
+    }
+
 }

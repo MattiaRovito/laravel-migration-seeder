@@ -19,6 +19,7 @@
       <h5 class="card-title">Destination Country: {{$package->country}}</h5>
       <p class="card-text">Days: {{$package->days}}</p>
       <a href="#" class="btn btn-primary">Price: {{$package->price}} $</a>
+      <p class="card-text"><a href="{{route('sezione-details', ['id' => $package->id])}}">Click here for more details!</a></p>
     </div>
 </div>
 

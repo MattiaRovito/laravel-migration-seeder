@@ -35,5 +35,5 @@ Route::get('/social' , 'HomeController@social' )->name('sezione-social');
 
 Route::get('/pacchetti', 'PacchettiController@index')->name('sezione-pacchetti');
 
+Route::get('/details/{id}', 'PacchettiController@show')->name('sezione-details');
 
-// Route::get('/pacchetti', )->name('sezione-pacchetti');
