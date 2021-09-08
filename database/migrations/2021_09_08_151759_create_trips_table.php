@@ -17,8 +17,8 @@ class CreateTripsTable extends Migration
             $table->id();
             $table->string('title_package',80);
             $table->string('country', 30);
-            $table->tinyInteger('days');
-            $table->float('price', 5, 2);
+            $table->tinyInteger('days')->unsigned();
+            $table->float('price', 10, 2);
             $table->timestamps();
         });
     }

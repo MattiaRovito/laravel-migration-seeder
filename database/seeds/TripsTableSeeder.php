@@ -12,16 +12,16 @@ class TripsTableSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 0; $i < 100; $i++){
+        for($i = 0; $i < 10; $i++){
 
             // creiamo una nuova istanza
             $newtrip = new Trip(); 
 
             // popoliamo le righe della tabella con dei valori fake
-            $newtrip->title_package = 'casa numero ' . $i;
+            $newtrip->title_package = 'Pacchetto numero ' . $i;
             $newtrip->country = 'Italy';
             $newtrip->days = rand(1,7);
-            $newtrip->price =rand(500,2000);
+            $newtrip->price = rand(20000, 3200000);
             
 
             // salviamo la nuova istanza nella tabella
